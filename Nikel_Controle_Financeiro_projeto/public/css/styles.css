@@ -1,0 +1,197 @@
+:root {
+    --primary-color: #4E0070;
+    --secundary-color: #008000;
+}
+
+*{
+    font-family: 'Poppins', 'Courier New', Courier, monospace;
+
+}
+
+#login {
+    background: linear-gradient(120deg, var(--secundary-color) 44.9%, #FFFFFF 45%) no-repeat fixed;
+}
+
+#app {
+    background: linear-gradient(120deg, #FFFFFF 44.9%, var(--secundary-color) 45%) no-repeat fixed;
+}
+
+header {
+    border-bottom: 1px solid #BEBCDC;
+    padding: 5px;
+    background-color: #FFFFFF;
+}
+
+.color-primary {
+    color: var(--primary-color);
+}
+
+.color-secundary {
+    color: var(--secundary-color);
+}
+
+.icon-detail {
+    font-size: 50px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.navbar-collapse div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.1px; 
+}
+.text-login {
+    color:#FFFFFF;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.button-login {
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+    width: 50%;
+    margin: 0 25%;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #BEBCDC;
+}
+
+.border-left {
+    border-left: 1px solid #BEBCDC;
+}
+
+.button-login:hover,
+.button-default:hover,
+.button-cancel:hover
+{
+    background-color: var(--secundary-color) !important;
+    color: #FFFFFF !important;
+}
+
+.btn:hover {
+    color: var(--secundary-color);
+}
+
+.button-default {
+    border-radius: 10px;
+    color: #FFFFFF;
+    background-color: var(--primary-color);
+    border: none;
+}
+
+.button-cancel {
+    border-radius: 10px;
+    color: #FFFFFF;
+    background-color: var(--primary-color);
+    border: none;
+}
+
+.button-float {
+    border-radius: 100%;
+    height: 60px;
+    width: 60px;
+    position: fixed;
+    bottom: 1rem;
+    right: 2rem;
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+    font-size: 35px;
+    padding: 0 !important;
+    border: 2px solid var(--primary-color);
+}
+
+.button-float:hover {
+    border: 2px solid var(--secundary-color);
+    background-color: #FFFFFF;
+    color: var(--secundary-color);
+}
+
+.link-default {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.link-default:hover {
+    color: var(--secundary-color);
+}
+
+.coins {
+    animation: brilho 2s infinite ease-in-out;
+}
+
+@keyframes brilho {
+    0% { filter: brightness(1); }
+    50% { filter: brightness(1.1); }
+    100% { filter: brightness(1); }
+}
+
+.logo-codai {
+    animation: wiggle 2.2s linear infinite; 
+}
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(0);
+    }
+    15% {
+        transform: rotate(-15deg);
+    }
+    20% {
+        transform: rotate(10deg);
+    }
+    25% {
+        transform: rotate(-10deg);
+    }
+    30% {
+        transform: rotate(10deg);
+    }
+    35% {
+        transform: rotate(-10deg);
+    }
+    40%, 100% {
+        transform: rotate(0);
+    }
+}
+
+.info {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 20px 0 0;
+}
+
+.logout{
+    min-width: 5rem !important;
+}
+
+.menu {
+    margin-right: 20px;
+}
+
+.btn-danger {
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-size: 10px;
+}
+
+@media (min-width: 1400px) {
+    .d-md-inline {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+@media (max-width: 780px) {
+    .text-login {
+        color:#FFFFFF;
+        background-color: var(--secundary-color); 
+        border-radius: 10px;      
+    }
+}
